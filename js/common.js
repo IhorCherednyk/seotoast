@@ -6,11 +6,12 @@ $(function() {
 
 	$(".who-item-wrap").equalHeights();
 
-	$(".toggle_mnu").click(function() {
+	$(".toggle_mnu").on("click", function() {
 		$(".sandwich").toggleClass("active");
+		return false;
 	});
 
-	$(".toggle_mnu").click(function() {
+	$(".toggle_mnu").on("click", function() {
 		if ($(".main-nav").is(":visible")) {
 			$(".main-nav").fadeOut(600);
 			$(".main-nav li").removeClass("fadeInDown animated")
@@ -18,6 +19,7 @@ $(function() {
 			$(".main-nav").fadeIn(600);
 			$(".main-nav li").addClass("fadeInDown animated")
 		};
+		return false;
 	});
 
 
