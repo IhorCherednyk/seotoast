@@ -1,15 +1,9 @@
 $(function() {
 
-	function heightDetect() {
-		var height = $(window).height();
-		$(".main-header").css("height",height );
-	};
-	heightDetect();
 	$(window).resize(function() {
-		heightDetect();
 		$(".who-item-wrap").equalHeights();
 	});
-	
+
 	$(".who-item-wrap").equalHeights();
 
 	$(".toggle_mnu").click(function() {
